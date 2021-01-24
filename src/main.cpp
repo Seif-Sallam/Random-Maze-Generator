@@ -8,12 +8,12 @@ int main()
     float speed = 150.f;
 
     currentView.setSize(sf::Vector2f(window.getSize()));
-    sf::Vector2i origin = { 0,0 };
+    sf::Vector2i origin = { 5,10 };
     sf::VertexArray mazeWalls;
 
 
     Maze maze;
-    maze.InitMaze(100, 100);
+    maze.InitMaze(30, 30);
     sf::Vector2i finalPoint = maze.Generate(origin);
     maze.BindToVertexArray(mazeWalls);
 
